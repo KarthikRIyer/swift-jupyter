@@ -48,12 +48,12 @@ enum JupyterDisplay {
              session: String,
              messageType: String = "display_data",
              version: String = "5.2") {
+            dateStr = date
             self.messageID = messageID
             self.username = username
             self.session = session
             self.messageType = messageType
             self.version = version
-            dateStr = date
         }
 
         var json: String {
