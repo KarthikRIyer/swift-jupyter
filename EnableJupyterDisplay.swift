@@ -36,6 +36,10 @@ enum JupyterDisplay {
         private enum CodingKeys: String, CodingKey {
             case messageID = "msg_id"
             case messageType = "msg_type"
+            case username = "username"
+            case version = "version"
+            case date = "date"
+            case session = "session"
         }
 
         init(messageID: String = UUID().uuidString,
