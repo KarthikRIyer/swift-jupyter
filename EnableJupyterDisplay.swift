@@ -183,7 +183,7 @@ extension JupyterDisplay {
 
 JupyterDisplay.enable()
 
-func display(base64EncodedPNG: String) {
-    let data = JupyterDisplay.MessageContent(base64EncodedPNG: base64EncodedPNG).json
-    JupyterDisplay.messages.append(JupyterDisplay.Message(content: data))
-}
+// func display(base64EncodedPNG: String) {
+//     let data = JupyterDisplay.MessageContent(base64EncodedPNG: base64EncodedPNG).json
+//     JupyterDisplay.messages.append(JupyterDisplay.Message(content: data))
+// }
