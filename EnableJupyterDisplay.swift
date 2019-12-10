@@ -38,7 +38,6 @@ enum JupyterDisplay {
             case messageType = "msg_type"
             case username = "username"
             case version = "version"
-            case date = "date"
             case session = "session"
         }
 
