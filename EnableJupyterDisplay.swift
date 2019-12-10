@@ -31,6 +31,7 @@ enum JupyterDisplay {
             formatter.locale = Locale(identifier: "en_US_POSIX")
             return formatter.string(from: currentDate)
         }
+        let dateStr: String
         let messageType: String
         let version: String
         private enum CodingKeys: String, CodingKey {
@@ -39,6 +40,7 @@ enum JupyterDisplay {
             case username = "username"
             case version = "version"
             case session = "session"
+            case dateStr = "date"
         }
 
         init(messageID: String = UUID().uuidString,
@@ -51,6 +53,7 @@ enum JupyterDisplay {
             self.session = session
             self.messageType = messageType
             self.version = version
+            dateStr = date
         }
 
         var json: String {
